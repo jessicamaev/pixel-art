@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Pixel Art</title>
+
+    <!-- Link CSS here -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Import Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="title" id="title">
+            <h1> Create Pixel Art </h1>
+        </div>
+        <div class="option">
+            <div class="opt-wrapper">
+                <!-- width range slider 1-->
+                <div class="slider">
+                    <label for="width-range">Grid Width</label>
+                    <input type="range" name="width" id="width-range" min="1" max="35" />
+                    <span id="width-value">00</span>
+                </div>
+                <!-- width range slider 1 ends-->
+
+                <!-- height range slider 2-->
+                <div class="slider">
+                    <label for="height-range">Grid Height</label>
+                    <input type="range" name="height" id="height-range" min="1" max="35" />
+                    <span id="height-value">00</span>
+                </div>
+                <!-- height range slider 2 ends-->
+            </div>
+            <!-- Tools-->
+            <div class="opt-wrapper">
+                <!-- create or clear buttons-->
+                <button id="submit-grid"> Create Grid </button>
+                <button id="clear-grid"> Clear Grid </button>
+                <!-- choose color-->
+                <input type="color" name="color" id="color-input" />
+                <button id="erase-btn"> Erase </button>
+                <button id="paint-btn"> Paint </button>
+            </div>
+        </div>
+
+        <div class="container"></div>
+
+    </div>
+
+    <!-- Link script here -->
+    <script src="script.js"></script>
+</body>
+
+</html>
